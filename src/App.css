@@ -1,0 +1,17 @@
+*{
+  box-sizing: border-box;
+}
+/* Hide scrollbar but keep scroll functionality */
+.cont && .box::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.cont {
+  -ms-overflow-style: none;  /* Internet Explorer / Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+@media (min-width: 400px) and (max-width: 767px) {
+  .air-conditions-box {
+    gap: 0.25rem; /* smaller gap */
+  }
+}
