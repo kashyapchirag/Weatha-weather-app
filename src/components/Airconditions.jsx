@@ -12,7 +12,7 @@ const Airconditions = ({data,data2,lat,setlat,lon,setlon,data3,setdata3,airquali
     2:"Fair",
     3:"Moderate",
     4:"Poor",
-    5:"Very Poor"
+    5:"Terrible"
   }
   const colorMap = {
   1: "#22c55e", // green-400
@@ -24,14 +24,14 @@ const Airconditions = ({data,data2,lat,setlat,lon,setlon,data3,setdata3,airquali
 
 
   return (
-    <div className='h-[18%] md:h-[30%] w-[95%] px-4 py-3 md:p-4 lg:p-5 bg-[#222d40]/60 rounded-4xl hover:h-[29%] hover:w-[96%] hover:bg-[#222d40]/70 bg-[#222d40]/70 backdrop-blur-md border border-white/10 flex flex-col lg:gap-3'>
+    <div className='h-auto sm:h-[18%] md:h-[25%] w-[95%] px-4 py-3 md:p-4 lg:p-5 bg-[#222d40]/60 rounded-4xl hover:h-[29%] hover:w-[96%] hover:bg-[#222d40]/70 bg-[#222d40]/70 backdrop-blur-md border border-white/10 flex flex-col lg:gap-3'>
       
       <div className="heading text-[#CBD5E1] text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] font-semibold ">AIR CONDITIONS</div>
 
       <div className="box h-[78%] lg:px-[2rem] flex justify-around items-center gap-2 sm:gap-2 md:gap-5 lg:gap-18 overflow-x-scroll overflow-y-hidden scroll-smooth" >
 
                 <div className="card w-[20rem] flex flex-col justify-center items-center">
-                  <img className='w-[2rem] sm:w-[3rem]' src={temperature} alt="temperature_image" />
+                  <img className='w-[2rem] md:w-[4rem] sm:w-[3rem]' src={temperature} alt="temperature_image" />
 
                   <div className='flex flex-col justify-center items-center'>
                     <span className='text-[0.8rem] md:text-[1rem] text-[#CBD5E1]'>Real Feel</span>
@@ -58,7 +58,7 @@ const Airconditions = ({data,data2,lat,setlat,lon,setlon,data3,setdata3,airquali
 
                 </div>
                 <div className="card w-[20rem] flex flex-col justify-center items-center">
-                  <img className='w-[2rem] sm:w-[3rem]' src={aqiimage} alt="aqi_image" />
+                  <img className='w-[2rem] md:w-[4rem] sm:w-[3rem]' src={aqiimage} alt="aqi_image" />
 
                   <div className='flex flex-col justify-center items-center'>
                     <span className='text-[0.8rem] md:text-[1rem] text-[#CBD5E1]'>AQI</span>
@@ -70,7 +70,7 @@ const Airconditions = ({data,data2,lat,setlat,lon,setlon,data3,setdata3,airquali
 
                 </div>
                 <div className="card w-[20rem] flex flex-col justify-center items-center">
-                  <img className='w-[2rem] sm:w-[3rem]' src={wind} alt="wind_image" />
+                  <img className='w-[2rem] md:w-[4rem] sm:w-[3rem]' src={wind} alt="wind_image" />
                   <div className='flex flex-col justify-center items-center'>
                     <span className='text-[0.8rem] md:text-[1rem] text-[#CBD5E1]'>Wind</span>
 
@@ -94,7 +94,7 @@ const Airconditions = ({data,data2,lat,setlat,lon,setlon,data3,setdata3,airquali
 
                 </div>
                 <div className="card w-[20rem] flex flex-col justify-center items-center">
-                  <img className='w-[2rem] sm:w-[3rem]' src={humidity} alt="humidity_image" />
+                  <img className='w-[2rem] md:w-[4rem] sm:w-[3rem]' src={humidity} alt="humidity_image" />
                   <div className='flex flex-col justify-center items-center'>
                     <span className='text-[0.8rem] md:text-[1rem] text-[#CBD5E1]'>Humidity</span>
 

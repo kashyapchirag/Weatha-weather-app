@@ -37,7 +37,7 @@ const Hourly = ({city,data,data2,setcity,currentweather,setdata,setdata2,hourlyw
   }
   return (
 
-    <div className='h-[20%] md:h-[30%] w-[95%] px-4 py-3 md:p-4 lg:p-5 bg-[#222d40]/60 rounded-4xl hover:h-[31%] hover:w-[96%]  bg-[#222d40]/70 backdrop-blur-md border border-white/10'>
+    <div className='h-auto sm:h-[20%] md:h-[25%] lg:h-[30%] w-[95%] px-4 py-3 md:p-4 lg:p-5 bg-[#222d40]/60 rounded-4xl hover:h-[31%] hover:w-[96%]  bg-[#222d40]/70 backdrop-blur-md border border-white/10'>
 
       <div className="text-[#CBD5E1] text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] font-semibold ">
         HOURLY FORECAST

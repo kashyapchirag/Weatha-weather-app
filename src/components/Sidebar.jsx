@@ -16,11 +16,11 @@ const Sidebar = () => {
         </div>
         
       
-        <NavLink to="/">
+        <NavLink to="/Weatha">
           <div className="weatherhome flex flex-col justify-center items-center md:gap-1 lg:gap-2">
             
             <img className='w-[1.5rem] hover:fill-white' src={weather_home} alt="weather logo" />
-            <span className='md:text-[0.5rem] lg:text-[0.9rem] hover:text-white'>Weather</span>
+            <span className='md:text-[0.5rem] lg:text-[0.7rem] hover:text-white'>Weather</span>
           </div>
         </NavLink>
 
@@ -28,7 +28,7 @@ const Sidebar = () => {
           <div className="umbrella flex flex-col justify-center items-center md:gap-1 lg:gap-2">
             
             <img className='w-[1.5rem]' src={map} alt="umbrella logo" />
-            <span className='md:text-[0.5rem] lg:text-[0.9rem] hover:text-white'>Map</span>
+            <span className='md:text-[0.5rem] lg:text-[0.7rem] hover:text-white'>Map</span>
           </div>
         </NavLink>
 

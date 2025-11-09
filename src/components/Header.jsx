@@ -41,7 +41,7 @@ const Header = ({city,data,data2,setcity,currentweather,setdata,setdata2,hourlyw
   
 
   return (
-    <div className='bg-[#222d40]/60 w-[95%] h-[7%] rounded-4xl  bg-[#222d40]/70 backdrop-blur-md border border-white/10'>
+    <div className='bg-[#222d40]/60 w-[95%] h-[3rem] rounded-4xl  bg-[#222d40]/70 backdrop-blur-md border border-white/10'>
       <input onClick={handleClick} onKeyDown={handleSearch} onChange={(e)=>{
         setcity(e.target.value)
         

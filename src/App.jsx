@@ -18,7 +18,7 @@ function App() {
       path:"/",
       element:<Layout/>,
       children:[
-        {path:"/",element:<Weatherpage/>},
+        {path:"/Weatha",element:<Weatherpage/>},
         {path:"/map",element:<Aqipage/>},
 
       ]

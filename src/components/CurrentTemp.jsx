@@ -42,7 +42,7 @@ const CurrentTemp = ({city,data,setcity,data2,setdata2,unit,setunit,fahrenheit})
   return (
     
     
-    <div className='h-[30%] sm:h-[35%] w-[95%] rounded-4xl px-4 md:px-8 lg:px-18  flex justify-between '>
+    <div className='h-[12rem] sm:h-[35%] w-[95%] rounded-4xl px-4 md:px-8 lg:px-18  flex justify-between '>
 
       <div className='flex w-[100%] justify-between items-center'>
           <div className="left w-[65%]">
@@ -64,9 +64,11 @@ const CurrentTemp = ({city,data,setcity,data2,setdata2,unit,setunit,fahrenheit})
               }{unit=="F" &&
                 
                 <>
-                  
-                  {fahrenheit}
-                  <span  onClick={()=>setunit("c")} className='cursor-pointer text-[3rem] relative p-2 bottom-9'>°{unit}</span>
+                  <span className="text-[3.4rem] md:text-[3.2rem] lg:text-[5rem] leading-none">
+                    {fahrenheit}
+                  </span>
+                  <span  onClick={()=>setunit("c")} className='cursor-pointer text-[2rem] md:text-[2.6rem] lg:text-[3rem] relative
+                  p-0 md:p-0 lg:p-1 bottom-5 md:bottom-4 lg:bottom-9'>°{unit}</span>
                 </>
               }
               

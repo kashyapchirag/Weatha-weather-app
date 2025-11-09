@@ -39,13 +39,13 @@ const Dayforecast = ({data4,setdata4,dayweather,unit,setunit,fahrenheit}) => {
   }
 
   return (
-    <div className='hidden sm:block w-[31.5%] h-[100%] p-9 bg-[#222d40]/60 rounded-4xl hover:h-[101%] hover:w-[33%] bg-[#222d40]/70 backdrop-blur-md border border-white/10'>
+    <div className='flex flex-col hidden sm:block w-[31.5%] h-[100%] px-4 py-3 md:p-4 lg:p-5 bg-[#222d40]/60 rounded-4xl hover:h-[101%] hover:w-[33%] bg-[#222d40]/70 backdrop-blur-md border border-white/10'>
       <div className='text-[1.4rem] font-semibold h-[5%]'>
-        <span className='text-[#CBD5E1] mr-8 '>7-DAY FORECAST</span>
+        <span className='text-[#CBD5E1] mr-8 text-[0.8rem] md:text-[0.9rem] lg:text-[1rem]'>7-DAY FORECAST</span>
 
       </div>
 
-      <div className='h-[95%] flex flex-col justify-center items-center gap-8'>
+      <div className='h-[95%] px-4 flex flex-col justify-around items-center gap-8'>
 
         {data4?.list?.map((item,index)=>{
           const timestamp = item.dt;       // e.g., 1762410600
@@ -55,17 +55,17 @@ const Dayforecast = ({data4,setdata4,dayweather,unit,setunit,fahrenheit}) => {
           
           return(
             <div key={item.dt} className='flex justify-center items-center'>
-              <div className='card h-[11%] flex justify-between items-center  '>
-                <div className='day w-[2rem] flex items-center justify-items-start text-[1.2rem] text-[#CBD5E1]'>
-                  {index==0 && <span>Today</span>}
-                  {index!=0 && <span>{dayName.slice(0,3)}</span>}
+              <div className='card h-[100%] flex justify-between items-center  '>
+                <div className='day flex items-center justify-items-start text-[1.2rem] text-[#CBD5E1]'>
+                  {index==0 && <span className='w-[2.4rem] '>Today</span>}
+                  {index!=0 && <span className='w-[2.4rem] '>{dayName.slice(0,3)}</span>}
                   
                 </div>
                 
 
                 <div className='text-[1.2rem] font-medium flex items-center justify-center gap-4'>
-                  <img className='w-[20%] flex justify-center' src={icons[item?.weather?.[0].icon]} alt="" />
-                  {item?.weather?.[0].main}
+                  <img className='w-[20%] flex justify-start' src={icons[item?.weather?.[0].icon]} alt="" />
+                  <span className='w-[20%]'>{item?.weather?.[0].main}</span>
                 </div>
                 <div className="temp">
                     {unit=="c" &&

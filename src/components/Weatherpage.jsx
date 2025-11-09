@@ -5,6 +5,7 @@ import { Outlet } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Sidebar from './Sidebar'
 import bg from '../assets/bg.jpg'
+import Footer from './Footer'
 
 const Weatherpage = () => {
 
@@ -26,7 +27,7 @@ const Weatherpage = () => {
   const [data4,setdata4] = useState({});
 
   
-  const airquality =`http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${API_key}`;
+  const airquality =`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${API_key}`;
   const daysweather = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${lon}&cnt=7&appid=${API_key}&units=metric`;
 
 
@@ -80,8 +81,12 @@ const Weatherpage = () => {
 
         <Middle city={city} data={data} data2={data2} setcity={setcity} setdata={setdata} setdata2={setdata2} currentweather={currentweather} hourlyweather={hourlyweather} lat={lat} lon={lon} setlat={setlat} setlon={setlon} setdata3={setdata3} data3 ={data3} airquality={airquality} setdata4={setdata4} data4 ={data4} daysweather={daysweather} unit={unit} setunit ={setunit} fahrenheit={fahrenheit} />
 
+
         <Dayforecast setdata4={setdata4} data4 ={data4} daysweather={daysweather} unit={unit} setunit ={setunit} fahrenheit={fahrenheit} />
 
+
+        
+        
       
     </>
   )
